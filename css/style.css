@@ -168,12 +168,20 @@ main .info_bg #aquarium_info .contents .top .img1 {
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-right: 20px;
+    transition: filter 0.3s;
+}
+main .info_bg #aquarium_info .contents .top .img1:hover {
+    filter: contrast(90%) brightness(130%);
 }
 main .info_bg #aquarium_info .contents .top .img2 {
     background-image: url(../img/info2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    transition: filter 0.3s;
+}
+main .info_bg #aquarium_info .contents .top .img2:hover {
+    filter: contrast(90%) brightness(130%);
 }
 main .info_bg #aquarium_info .contents .btm {
     display: flex; flex-flow: row nowrap;
