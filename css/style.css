@@ -1,0 +1,308 @@
+/* header */
+header {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%; height: 100px;
+    padding: 10px 30px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; z-index: 9999;
+}
+header h1 {}
+header h1 img {}
+header nav {}
+header nav ul {display: flex;}
+header nav ul li {
+    position: relative;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header nav ul li > a {
+    font-size: 1.333rem; color: #fff; font-weight: 700;
+    padding: 0 42px; line-height: 100px;
+}
+header nav ul li > .sub {
+    display: flex; flex-flow: column nowrap;
+    width: 100%; height: 400px;
+    position: absolute; z-index: 8000;
+}
+header nav ul li > .sub > li {}
+header nav ul li > .sub > li > a {
+    text-align: center;
+    width: 100%;
+    line-height: 46px; font-size: 1rem;
+    padding: 10px 0 10px 5px; display: inline-block;
+}
+header nav .nav_bg {
+    position: absolute; left: 0;
+    background: rgba(27, 27, 27, 0.5);
+    width: 100%; height: 400px; z-index: 100;
+}
+/* main */
+main {}
+/* 1.visual */
+main .visual {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+main .visual .txt {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 9000;
+}
+main .visual .txt h2 {
+    font-weight: 700; font-size: 5rem; color: #fff;
+}
+main .visual .txt .left {
+    text-align: left;
+}
+main .visual .txt .right {
+    text-align: right;
+}
+main .visual .txt .mouse {
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    animation: mousemove 1s linear alternate infinite;
+}
+main .visual video {}
+/* 단체선택자 */
+main #wrap .section {
+    background-position: center;
+    background-size: cover;
+}
+main #wrap .section:nth-child(1) {
+}
+main #wrap .section:nth-child(2) {
+    background-image: url(../img/bg1.jpg);
+}
+main #wrap .section:nth-child(3) {
+    background-image: url(../img/bg2.jpg);
+}
+main #wrap .section:nth-child(4) {
+    background-image: url(../img/bg3.jpg);
+}
+main #wrap div section .top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #wrap div section {
+    padding: 0 30px;
+}
+main #wrap div section h2 {
+    font-size: 3.157rem; font-weight: 300; color: #fff;
+    margin-bottom: 40px; line-height: 60px;
+}
+main #wrap div section h2 em {
+    font-size: 3.157rem; font-weight: 700; color: #fff;
+}
+/* 2.aquarium_event*/
+main #warp .event_bg {
+    width: 1380px;
+    margin: 0 auto;
+}
+main .event_bg #aquarium_event #card_slide {
+    width: 1380px; margin: 0 auto;
+}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper {}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper .swiper-slide {
+    width: 447px; height: 447px;
+}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper .slide1 {
+    background: url(../img/event_1.png) no-repeat;
+}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper .slide2 {
+    background: url(../img/event_2.png) no-repeat;
+}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper .slide3 {
+    background: url(../img/event_3.png) no-repeat;
+}
+main .event_bg #aquarium_event #card_slide .swiper-wrapper .slide4 {
+    background: url(../img/event_4.png) no-repeat;
+}
+main .event_bg #aquarium_event #card_slide .swiper-pagination {
+    bottom: 10px;
+}
+/* 3. aquarium_info */
+main #warp .info_bg {
+    width: 1380px;
+}
+main .info_bg #aquarium_info {}
+main .info_bg #aquarium_info .contents {
+    display: flex; flex-flow: column nowrap;
+    padding: 0 294px;
+}
+main .info_bg #aquarium_info .contents .top {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+main .info_bg #aquarium_info .contents .top .contents_bg {
+    width: 663px; height: 310px;
+    padding: 40px 0 0 40px;
+}
+main .info_bg #aquarium_info .contents .top .contents_bg p {
+    color: #fff;
+    padding-bottom: 20px;
+}
+main .info_bg #aquarium_info .contents .top .contents_bg h3 {
+    font-size: 1.333rem; color: #fff; font-weight: 700;
+    padding-bottom: 20px; line-height: 28px;
+}
+main .info_bg #aquarium_info .contents .top .contents_bg a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 4px 14px;
+    border-radius: 10px;
+}
+main .info_bg #aquarium_info .contents .top .contents_bg a span {margin-right: 16px;}
+main .info_bg #aquarium_info .contents .top .img1 {
+    background-image: url(../img/info1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+main .info_bg #aquarium_info .contents .top .img2 {
+    background-image: url(../img/info2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+main .info_bg #aquarium_info .contents .btm {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .info_bg #aquarium_info .contents .btm li {
+    width: 375px; height: 194px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin-right: 20px;
+}
+main .info_bg #aquarium_info .contents .btm li:last-child {
+    margin-right: 0;
+}
+main .info_bg #aquarium_info .contents .btm li a .news {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+main .info_bg #aquarium_info .contents .btm li a h3 {
+    font-weight: 700;
+    padding-bottom: 58px; line-height: 20px;
+}
+main .info_bg #aquarium_info .contents .btm li a .date {
+    font-weight: 300;
+}
+/* 4. aquarium_ticket */
+main #warp .ticket_bg {}
+main .ticket_bg #aquarium_ticket {}
+main .ticket_bg #aquarium_ticket h2 {}
+main .ticket_bg #aquarium_ticket .contents {}
+main .ticket_bg #aquarium_ticket .contents .select {
+    width: 1380px; margin: 0 auto;
+}
+main .ticket_bg #aquarium_ticket .contents .select a {
+    padding: 5.5px 15px; border-radius: 20px;
+    background-color: #fff; margin-right: 10px;
+}
+main .ticket_bg #aquarium_ticket .contents .select a:last-child {margin-right: 0;}
+main .ticket_bg #aquarium_ticket .contents .ticket {
+    display: flex; flex-flow: row wrap;
+    width: 1380px; margin: 0 auto;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul {
+    display: flex; flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    width: calc(50% - 40px /4); height: 240px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul:nth-child(2),
+main .ticket_bg #aquarium_ticket .contents .ticket ul:first-child {
+    margin-top: 20px; margin-bottom: 20px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul:nth-child(odd) {
+    margin-right: 20px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li {
+    padding: 30px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li > p {
+    color: #767676;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li h3 {
+    font-weight: 700; font-size: 1.333rem;
+    padding: 14px 0;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info>* {
+    margin-right: 12px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info:last-child {
+    margin-right: 0;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info {
+    display: flex; flex-flow: row nowrap;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info p {}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info p del {text-decoration:line-through;}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info p em {font-weight: 700; color: #E10000;}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .selling_info p span {}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn {}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn a {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn a:first-child {
+    background-color: #E8E8E8;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn a:last-child {
+    background-color: #000; color: #fff;
+}
+/* 5. footer */
+main .footer {
+    background-color: #222222;
+    padding: 40px 30px;
+}
+main .footer .top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .footer .top .right {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+main .footer .top h2 {}
+main .footer .top h2 img {}
+main .footer .top .right .btn {}
+main .footer .top .right .btn a:first-child {margin-left: 0;}
+main .footer .top .right .btn a {margin-left: 12px;}
+main .footer .top .btn a img {}
+main .footer .top .right #site {
+    margin-left: 40px;
+}
+main .footer .top .right #site option {}
+main .footer .btm {
+    padding-top: 35.73px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+}
+main .footer .btm address {
+    color: #fff;
+    font-weight: 400; line-height: 40px;
+}
+main .footer .btm p {
+    color: #949494;
+}
