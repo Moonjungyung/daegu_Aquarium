@@ -16,12 +16,11 @@
     <!-- styles -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header>
-        <h1><img src="./img/logo.png" alt="대구아쿠아리움"></h1>
+        <h1><a href="./index.html"><img src="./img/logo.png" alt="대구아쿠아리움"></a></h1>
         <nav>
             <ul>
                 <li>
@@ -30,7 +29,7 @@
                         <li><a href="#">아쿠아리움 소개</a></li>
                         <li><a href="#">공지사항</a></li>
                         <li><a href="#">이용안내</a></li>
-                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="./map.html">찾아오시는 길</a></li>
                         <li><a href="#">보도자료</a></li>
                         <li><a href="#">자주 묻는 질문</a></li>
                     </ul>
@@ -49,7 +48,7 @@
                     <ul class="sub">
                         <li><a href="#">아쿠아리스트 이야기</a></li>
                         <li><a href="#">아쿠아리움 친구들</a></li>
-                        <li><a href="#">공연ㆍ체험 소개</a></li>
+                        <li><a href="./experience.html">공연ㆍ체험 소개</a></li>
                         <li><a href="#">공연ㆍ체험 시간표</a></li>
                     </ul>
                 </li>
@@ -265,15 +264,18 @@
                             <a href="#"><img src="./img/icon_3.png" alt=""></a>
                             <a href="#"><img src="./img/icon_4.png" alt=""></a>
                         </div>
-                        <select id="site">
-                            <option value="" selected disabled hidden>Family Site</option>
-                            <option value="">박물관은 살아있다</option>
-                            <option value="">런닝맨 Ep.2 부산 서면점</option>
-                            <option value="">런닝맨 Ep.3 강릉점</option>
-                            <option value="">놀이똥산</option>
-                            <option value="">다이나믹 메이즈</option>
-                            <option value="">전체 보기</option>
-                        </select>
+                        <div class="select">
+                            <select id="site">
+                                <option value="" selected disabled hidden>Family Site</option>
+                                <option value="">박물관은 살아있다</option>
+                                <option value="">런닝맨 Ep.2 부산 서면점</option>
+                                <option value="">런닝맨 Ep.3 강릉점</option>
+                                <option value="">놀이똥산</option>
+                                <option value="">다이나믹 메이즈</option>
+                                <option value="">전체 보기</option>
+                            </select>
+                            <div class="select-arrow"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="btm">

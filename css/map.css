@@ -1,0 +1,164 @@
+header {
+    background: #000;
+}
+main {
+    padding: 200px 30px 0 30px;
+    background: #F8F8F8;
+}
+main h2 {
+    font-size: 2.369rem; font-weight: 700;
+    text-align: center;
+}
+main > p {
+    font-size: 1.333rem;
+    text-align: center;
+    padding: 30px 0 46px 0;
+}
+main #map {
+    width: 1380px; margin: 0 auto; height: 568px;
+    border-radius: 10px;
+    padding-bottom: 110px;
+}
+main .info {}
+main .info > h2 {
+    padding: 110px 0 46px 0;
+}
+main .info .public {
+    width: 1380px;
+    margin: 0 auto;
+}
+main .info .public ul {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .info .public ul li {}
+main .info .public ul li .top {
+    width: 447px; height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0 ;
+}
+main .info .public ul li .train {
+    background-color: #E15100;
+}
+main .info .public ul li .subway {
+    background-color: #00B8E1;
+}
+main .info .public ul li .bus {
+    background-color: #71E100;
+}
+main .info .public ul li .top img {
+    width: 160px; height: 160px;
+}
+main .info .public ul li .btm {
+    width: 447px; height: 354px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 10px 10px;
+    padding: 0 12px;
+}
+main .info .public ul li .train_sub {
+    text-align: center;
+}
+main .info .public ul li .btm h3 {
+    font-size: 1.777rem; font-weight: 700;
+    text-align: center; padding: 33px 0 50px 0;
+}
+/* 단체선택자 h4 p */
+main .info .public ul li .btm div {}
+main .info .public ul li .btm div > h4 {
+    font-weight: 700;
+}
+main .info .public ul li .btm div p {color: #000;}
+/* end */
+main .info .public ul li .btm .sub_center {
+    text-align: center;
+}
+main .info .public ul li .btm .all {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .info .public ul li .btm .all .left {
+    display: flex; flex-flow: column nowrap;
+    margin-right: 16px;
+}
+main .info .public ul li .btm .all .left:last-child {
+    margin-right: 0;
+}
+main .info .public ul li .btm .all .left h4 {}
+main .info .public ul li .btm .all .left p {}
+main .info .public ul li .btm .all .right {}
+main .info .public ul li .btm .all .right h4 {}
+main .info .public ul li .btm .all .right h4 p {}
+main .info .public ul li .btm .all .right h4 p {}
+main .info .public ul li .btm div p {
+    padding-top: 24px;
+}
+/* 단체선택자 dl dt dd */
+main .info .public ul li .btm div dl {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+main .info .public ul li .btm div dl .main {
+    width: 80px; padding: 5px;
+    text-align: center;
+    background-color: #0E2D77;
+}
+main .info .public ul li .btm div dl .general {
+    background-color: #16B10A;
+}
+main .info .public ul li .btm div dl .branch {
+    background-color: #2D720F;
+}
+main .info .public ul li .btm div dl .circular {
+    background-color: #FFBA00;
+}
+main .info .public ul li .btm div dl dt {
+    padding: 5px 10px; margin-right: 10px;
+    border-radius: 5px; color: #fff;
+}
+main .info .public ul li .btm div dl dt dd {
+    line-height: 30px;
+}
+/* end */
+main .info .public p {
+    color: #787878; font-weight: 700;
+    padding: 24px 0 100px 0;
+}
+/* footer */
+footer {
+    background-color: #222222;
+    padding: 40px 30px;
+}
+footer .top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer .top .right {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+footer .top h2 {}
+footer .top h2 img {}
+footer .top .right .btn {}
+footer .top .right .btn a:first-child {margin-left: 0;}
+footer .top .right .btn a {margin-left: 12px;}
+footer .top .btn a img {}
+footer .top .right #site {
+    margin-left: 40px;
+}
+footer .top .right #site option {}
+footer .btm {
+    padding-top: 35.73px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+}
+footer .btm address {
+    color: #fff;
+    font-weight: 400; line-height: 40px;
+}
+footer .btm > p {
+    color: #949494;
+}
