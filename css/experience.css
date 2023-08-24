@@ -18,7 +18,7 @@ main #visual h2 {
 /* 2.category */
 main #category {
     width: 520px; margin: 0 auto;
-    padding: 43px 0 68px 0;
+    padding: 50px 0 110px 0;
 }
 main #category .category_sub {
     display: flex; flex-flow: row nowrap;
@@ -36,44 +36,50 @@ main #category .category_sub a span {
 }
 /* 3.experience */
 main #experience {width: 1380px; margin: 0 auto;}
-main #experience .feeding {display: flex; flex-flow: row nowrap;}
-main #experience .feeding p {}
-main #experience .feeding p img {}
-main #experience .feeding div .explanation {
-    display: flex; flex-flow: column nowrap;}
-main #experience .feeding>div {}
-main #experience .feeding div h3 {font-size: 2.369rem; font-weight: 700;}
-main #experience .feeding div .info {color: #767676;}
-main #experience .feeding div .btn {
+main #experience .bg {display: flex; flex-flow: row nowrap;}
+main #experience>* {padding-bottom: 90px;}
+main #experience .performance {padding-bottom: 100px;}
+main #experience .bg p {}
+main #experience .bg p img {}
+main #experience .bg div .explanation {}
+main #experience .bg>div {
+    padding-left: 20px;
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+main #experience .bg div h3 {font-size: 2.369rem; font-weight: 700;}
+main #experience .bg div .info {color: #767676; padding: 20px 0;}
+main #experience .bg div .btn {
     display: flex; flex-flow: row nowrap;
 }
-main #experience .feeding div .btn a {
+main #experience .bg div .btn a {
     padding: 10px 20px;
     border-radius: 10px;
 }
-main #experience .feeding div .btn a:first-child {
+main #experience .bg div .btn a:first-child {
     background-color: #E8E8E8;
     border: 2px solid #E8E8E8;
     transition: all 0.3s;
+    margin-right: 13px;
 }
-main #experience .feeding div .btn a:first-child:hover {
+main #experience .bg div .btn a:first-child:hover {
     background-color: #767676;
     border: 2px solid #767676; color: #fff;
 }
-main #experience .feeding div .btn a:last-child {
+main #experience .bg div .btn a:last-child {
     background-color: #fff; color: #000;
     border: 2px solid #000;
     transition: all 0.3s;
 }
-main #experience .feeding div .btn a:last-child:hover {
+main #experience .bg div .btn a:last-child:hover {
     background-color: #000; color: #fff;
     border: 2px solid #000;
 }
-main #experience .feeding div p {}
-main #experience .feeding div .guide {
+main #experience .bg div p {}
+main #experience .bg div .guide {
     color: #767676; line-height: 24px;
 }
-main #experience .feeding div .guide em {font-weight: 700;}
+main #experience .bg div .guide em {font-weight: 700;}
 /* footer */
 footer {
     background-color: #222222;
