@@ -25,11 +25,11 @@ main .visual .txt .left {
 main .visual .txt .right {
     text-align: right;
 }
-main .visual .txt .mouse {
+/* main .visual .txt .mouse {
     position: absolute; left: 50%;
     transform: translateX(-50%);
     animation: mousemove 1s linear alternate infinite;
-}
+} */
 main .visual video {}
 /* 단체선택자 */
 main #wrap .section {
@@ -184,13 +184,19 @@ main .ticket_bg #aquarium_ticket .contents .select {
 main .ticket_bg #aquarium_ticket .contents .select a {
     padding: 5.5px 15px; border-radius: 20px;
     background-color: #fff; margin-right: 10px;
+    transition: all 0.3s; display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+main .ticket_bg #aquarium_ticket .contents .select a:hover {
+    background-color: #000;
+    color: #fff;
 }
 main .ticket_bg #aquarium_ticket .contents .select a:last-child {margin-right: 0;}
 main .ticket_bg #aquarium_ticket .contents .ticket {
     display: flex; flex-flow: row wrap;
     width: 1380px; margin: 0 auto;
 }
-main .ticket_bg #aquarium_ticket .contents .ticket ul {
+main .ticket_bg #aquarium_ticket .contents .ticket > ul {
     display: flex; flex-flow: column wrap;
     justify-content: space-between;
     background-color: #fff;
@@ -199,8 +205,11 @@ main .ticket_bg #aquarium_ticket .contents .ticket ul {
     border-radius: 10px;
 }
 main .ticket_bg #aquarium_ticket .contents .ticket ul:nth-child(2),
-main .ticket_bg #aquarium_ticket .contents .ticket ul:first-child {
-    margin-top: 20px; margin-bottom: 20px;
+main .ticket_bg #aquarium_ticket .contents .ticket .year {
+    margin-top: 20px;
+}
+main .ticket_bg #aquarium_ticket .contents .ticket .best_sub {
+    margin-top: 20px;
 }
 main .ticket_bg #aquarium_ticket .contents .ticket ul:nth-child(odd) {
     margin-right: 20px;
@@ -254,4 +263,7 @@ main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn a:last-c
 main .ticket_bg #aquarium_ticket .contents .ticket ul li .info .buy_btn a:last-child:hover {
     background-color: #000; color: #fff;
     border: 2px solid #000;
+}
+.showHide {
+    display: block;
 }

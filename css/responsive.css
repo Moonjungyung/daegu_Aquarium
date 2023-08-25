@@ -1,0 +1,18 @@
+@media screen and (max-width:1250px){
+    header nav ul li > a {
+        font-size: 1rem;
+    }
+    main .visual .txt h2 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:768px){
+    main .visual .txt h2 {
+        font-size: 3.157rem;
+    }
+}
+@media screen and (max-width:514px){
+    main .visual .txt h2 {
+        font-size: 1.777rem;
+    }
+}

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <header>
@@ -66,7 +67,7 @@
                         색다른 <br>
                         즐거움,
                     </h2>
-                    <p class="mouse"><img src="./img/mouse.png" alt=""></p>
+                    <!-- <p class="mouse"><img src="./img/mouse.png" alt=""></p> -->
                     <h2 class="right">
                         대구 <br>
                         아쿠아리움에서
@@ -89,6 +90,10 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
+                            <div class="swiper-slide slide1"></div>
+                            <div class="swiper-slide slide2"></div>
+                            <div class="swiper-slide slide3"></div>
+                            <div class="swiper-slide slide4"></div>
                             <div class="swiper-slide slide1"></div>
                             <div class="swiper-slide slide2"></div>
                             <div class="swiper-slide slide3"></div>
@@ -121,7 +126,7 @@
                                 <h3>이색적인 체험 프로그램과 <br>
                                     탐험 프로그램 등을 만나보세요.
                                 </h3>
-                                <a href="#"><span>바로가기</span><img src="./img/go_next.png" alt=""></a>
+                                <a href="./experience.html"><span>바로가기</span><img src="./img/go_next.png" alt=""></a>
                             </li>
                         </ul>
                         <ul class="btm">
@@ -164,12 +169,11 @@
                     </div>
                     <div class="contents">
                         <div class="select">
-                            <a href="#">BEST</a>
-                            <a href="#">연간이용권</a>
-                            <a href="#">하프이용권</a>
+                            <a class="best" href="#">BEST</a>
+                            <a class="half" href="#">연간이용권 / 하프이용권</a>
                         </div>
                         <div class="ticket">
-                            <ul>
+                            <ul class="best_sub">
                                 <li>
                                     <p>아쿠아리움 체험 포함</p>
                                     <h3>대구 아쿠아리움 성인 1인 입장권</h3>
@@ -189,7 +193,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul>
+                            <ul class="best_sub">
                                 <li>
                                     <p>아쿠아리움 체험 포함</p>
                                     <h3>대구 아쿠아리움 청소년/유아 1인 입장권</h3>
@@ -209,7 +213,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul>
+                            <ul class="best_sub">
                                 <li>
                                     <p>아쿠아리움 체험 포함</p>
                                     <h3>대구 아쿠아리움 1인 오후 입장권</h3>
@@ -229,7 +233,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul>
+                            <ul class="best_sub">
                                 <li>
                                     <p>아쿠아리움 체험 포함</p>
                                     <h3>대구 아쿠아리움 프로그램 체험 1인 입장권</h3>
@@ -249,6 +253,87 @@
                                     </div>
                                 </li>
                             </ul>
+                            <!-- 연간이용권/하프이용권 -->
+                            <ul class="year">
+                                <li>
+                                    <p>아쿠아리움 체험 포함</p>
+                                    <h3>대구 아쿠아리움 1인 연간이용권 입장권</h3>
+                                    <p>2시간 무료주차 | 이벤트 공연 7종 | 아쿠아 탐험대 임명장 | 캐릭터 뱃지/ 머그컵 증정</p>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <div class="selling_info">
+                                            <p><del>정상가 120,000원</del></p>
+                                            <p>판매가 <em>59,000원</em></p>
+                                            <p><em>50%</em><span>할인</span></p>
+                                        </div>
+                                        <div class="buy_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">구매하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="year">
+                                <li>
+                                    <p>아쿠아리움 체험 포함</p>
+                                    <h3>대구 아쿠아리움 1인 연간이용권 주중ㆍ주말 입장권</h3>
+                                    <p>2시간 무료주차 | 이벤트 공연 7종 | 아쿠아 탐험대 임명장 | 캐릭터 뱃지/ 머그컵 증정</p>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <div class="selling_info">
+                                            <p><del>정상가 120,000원</del></p>
+                                            <p>판매가 <em>85,000원</em></p>
+                                            <p><em>30%</em><span>할인</span></p>
+                                        </div>
+                                        <div class="buy_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">구매하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="year">
+                                <li>
+                                    <p>아쿠아리움 체험 포함</p>
+                                    <h3>대구 아쿠아리움 1인 연간이용권 주중 입장권</h3>
+                                    <p>2시간 무료주차 | 이벤트 공연 7종 | 아쿠아 탐험대 임명장 | 캐릭터 뱃지/ 머그컵 증정 </p>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <div class="selling_info">
+                                            <p><del>정상가 120,000원</del></p>
+                                            <p>판매가 <em>59,900원</em></p>
+                                            <p><em>50%</em><span>할인</span></p>
+                                        </div>
+                                        <div class="buy_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">구매하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="year">
+                                <li>
+                                    <p>아쿠아리움 체험 포함</p>
+                                    <h3>대구 아쿠아리움 1인 하프이용권 1인 입장권</h3>
+                                    <p>2시간 무료주차 | 인어쇼 | 바다생물 관찰하기 프로그램 포함</p>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <div class="selling_info">
+                                            <p><del>정상가 75,000원</del></p>
+                                            <p>판매가 <em>50,800원</em></p>
+                                            <p><em>33%</em><span>할인</span></p>
+                                        </div>
+                                        <div class="buy_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">구매하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -259,10 +344,10 @@
                     <h2><img src="./img/logo.png" alt="대구아쿠아리움"></h2>
                     <div class="right">
                         <div class="btn">
-                            <a href="#"><img src="./img/icon_1.png" alt=""></a>
-                            <a href="#"><img src="./img/icon_2.png" alt=""></a>
-                            <a href="#"><img src="./img/icon_3.png" alt=""></a>
-                            <a href="#"><img src="./img/icon_4.png" alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCrEQ2B0LNp0RSbeM5z7ITDQ"><img src="./img/icon_1.png" alt="youtube"></a>
+                            <a href="https://www.instagram.com/daeguaqua/"><img src="./img/icon_2.png" alt="instagram"></a>
+                            <a href="https://www.facebook.com/daeguaqua/"><img src="./img/icon_3.png" alt="facebook"></a>
+                            <a href="https://pf.kakao.com/_lTdhxl"><img src="./img/icon_4.png" alt="kakao"></a>
                         </div>
                         <div class="select">
                             <select id="site">
@@ -292,25 +377,65 @@
     <script src="./script/jquery.fullPage.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- scrolltrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- event -->
     <script src="./script/script.js"></script>
     <!-- slider -->
     <script>
         const event_slide = new Swiper('#card_slide',{
-            slidesPerView : '3',
-            // centeredSlides:true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            direction:'horizontal',
+            slidesPerView : 3,
+            centeredSlides:true,
+            autoplay: {delay: 2500,},
+            disableOnInteraction: false,
             loop:true,
-            loopedSlides: 3,
+            loopedSlides: 1,
             speed:800,
             disableOnInteraction:false,
-            pagination : {
-                el : '.swiper-pagination',
-            }
         })
+        $('#wrap').fullpage({
+    scrollBar:true, //크롤바 표시 유무 true false
+        scrollingSpeed:800, //스크롤 속도
+        navigation:true, //우측 내비게이션 유무
+        navigationTooltips:['대구 아쿠아리움','이벤트','아쿠아리움 이야기','입장권 할인판매'],
+        showActiveTooltip:true, //내비게이션에 hover하지 않아도 글자가 보임
+})
+    const best = document.querySelector('.ticket_bg .best')
+    const half = document.querySelector('.ticket_bg .half')
+    const year = document.querySelectorAll('.ticket_bg .year')
+    const best_sub = document.querySelectorAll('.ticket_bg .best_sub')
+    console.log(best,half,year,best_sub)
+    for(let i of year){i.style.display = 'none'}
+    half.addEventListener('click',function(e){
+        e.preventDefault()
+        for(let i of year){i.style.display = 'none'}
+        for(let i of best_sub){i.style.display = 'none'}
+        for(let i of year){i.style.display = 'flex'}
+    })
+    best.addEventListener('click',function(e){
+        e.preventDefault()
+        for(let i of year){i.style.display = 'none'}
+        for(let i of best_sub){i.style.display = 'none'}
+        for(let i of best_sub){i.style.display = 'flex'}
+    })
+    function scroll(bg, target){
+        gsap.fromTo(bg,{
+        //from
+        opacity:0,
+        x: -200
+    },{
+        //to
+        scrollTrigger : target,
+        opacity:1,
+        x: 0,
+        duration: 1
+    })
+    }
+    scroll('.event_bg h2','.event_bg')
+    scroll('.info_bg h2','.info_bg')
+    scroll('.ticket_bg h2','.ticket_bg')
     </script>
 </body>
 </html>

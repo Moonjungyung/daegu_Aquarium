@@ -10,70 +10,38 @@
     <!-- styles -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_sub.css">
     <link rel="stylesheet" href="./css/experience.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html"><img src="./img/logo.png" alt="대구아쿠아리움"></a></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">대구아쿠아리움</a>
-                    <ul class="sub">
-                        <li><a href="#">아쿠아리움 소개</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="./map.html">찾아오시는 길</a></li>
-                        <li><a href="#">보도자료</a></li>
-                        <li><a href="#">자주 묻는 질문</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">입장권 구매 / 연간이용권 안내</a>
-                    <ul class="sub">
-                        <li><a href="#">입장권 구매</a></li>
-                        <li><a href="#">구매내역 조회</a></li>
-                        <li><a href="#">연간이용권 고객 안내</a></li>
-                        <li><a href="#">연간이용권 고객 혜택</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">아쿠아리움 이야기</a>
-                    <ul class="sub">
-                        <li><a href="#">아쿠아리스트 이야기</a></li>
-                        <li><a href="#">아쿠아리움 친구들</a></li>
-                        <li><a href="./experience.html">공연ㆍ체험 소개</a></li>
-                        <li><a href="#">공연ㆍ체험 시간표</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">이벤트</a></li>
-            </ul>
-            <div class="nav_bg"></div>
-        </nav>
-    </header>
+    <?php include('./header.php')?>
     <main>
         <section id="visual">
             <h2>공연ㆍ <br>
                 체험 소개</h2>
         </section>
         <section id="category">
-            <div class="category_sub">
-                <a href="#">
-                    <img src="./img/experience_icon1.jpg" alt="">
-                    <span>간식주기<br>체험</span>
-                </a>
-                <a href="#">
-                    <img src="./img/experience_icon2.jpg" alt="">
-                    <span>닥터피쉬<br>체험</span>
-                </a>
-                <a href="#">
-                    <img src="./img/experience_icon3.jpg" alt="">
-                    <span>아쿠아리움<br>수조탐험</span>
-                </a>
-                <a href="#">
-                    <img src="./img/experience_icon4.jpg" alt="">
-                    <span>아쿠아리움<br>수중공연</span>
-                </a>
+            <div class="category_sub_bg">
+                <h2>대구 아쿠아리움 프로그램 소개</h2>
+                <p>신나는 공연과 생생한 체험을 소개합니다!</p>
+                <div class="category_sub">
+                    <a href="#">
+                        <img src="./img/experience_icon1.jpg" alt="">
+                        <span>간식주기<br>체험</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/experience_icon2.jpg" alt="">
+                        <span>닥터피쉬<br>체험</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/experience_icon3.jpg" alt="">
+                        <span>아쿠아리움<br>수조탐험</span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/experience_icon4.jpg" alt="">
+                        <span>아쿠아리움<br>수중공연</span>
+                    </a>
+                </div>
             </div>
         </section>
         <section id="experience">
@@ -159,37 +127,29 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="top">
-            <h2><img src="./img/logo.png" alt="대구아쿠아리움"></h2>
-            <div class="right">
-                <div class="btn">
-                    <a href="#"><img src="./img/icon_1.png" alt=""></a>
-                    <a href="#"><img src="./img/icon_2.png" alt=""></a>
-                    <a href="#"><img src="./img/icon_3.png" alt=""></a>
-                    <a href="#"><img src="./img/icon_4.png" alt=""></a>
-                </div>
-                <div class="select">
-                    <select id="site">
-                        <option value="" selected disabled hidden>Family Site</option>
-                        <option value="">박물관은 살아있다</option>
-                        <option value="">런닝맨 Ep.2 부산 서면점</option>
-                        <option value="">런닝맨 Ep.3 강릉점</option>
-                        <option value="">놀이똥산</option>
-                        <option value="">다이나믹 메이즈</option>
-                        <option value="">전체 보기</option>
-                    </select>
-                    <div class="select-arrow"></div>
-                </div>
-            </div>
-        </div>
-        <div class="btm">
-            <address>(주)아쿠아월드 대구광역시 동구 동부로 149 <br>
-                사업자등록번호 : 256-81-00015 Tel 053.247.8899
-            </address>
-            <p>Copyright© 2023 moonjungyung All rights reserved.</p>
-        </div>
-    </footer>
+    <?php include('./footer_sub.php')?>
     <script src="./script/script.js"></script>
+    <!-- scrolltrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+        function scroll(bg, target){
+        gsap.fromTo(bg,{
+        //from
+        opacity:0,
+        x: -200
+    },{
+        //to
+        scrollTrigger : target,
+        opacity:1,
+        x: 0,
+        duration: 1
+    })
+    }
+    scroll('#experience .feeding','#experience')
+    scroll('#experience .Dr','#experience .feeding')
+    scroll('#experience .explore','#experience .Dr')
+    scroll('#experience .performance','#experience .explore')
+    </script>
 </body>
 </html>
