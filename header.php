@@ -3,7 +3,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">대구아쿠아리움</a>
+                    <a href="./map.html">대구아쿠아리움</a>
                     <ul class="sub">
                         <li><a href="#">아쿠아리움 소개</a></li>
                         <li><a href="#">공지사항</a></li>
@@ -23,7 +23,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">아쿠아리움 이야기</a>
+                    <a href="./experience.html">아쿠아리움 이야기</a>
                     <ul class="sub">
                         <li><a href="#">아쿠아리스트 이야기</a></li>
                         <li><a href="#">아쿠아리움 친구들</a></li>

@@ -111,3 +111,6 @@ select::-ms-expand {
     border-width: 8px 5px 0 5px;
     border-color: #999 transparent transparent transparent;
 }
+main, header, footer {
+    min-width: 1920px;
+}
